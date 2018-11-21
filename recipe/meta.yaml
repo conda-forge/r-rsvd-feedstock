@@ -15,8 +15,8 @@ source:
   sha256: c91f0abd50f5b8008a99b2f3bd046b1ca91dc0d0de9714b0d2fcbe2332f1e1b4
 
 build:
-  number: 0
-  skip: true  # [win32]
+  noarch: generic
+  number: 1000
 
   rpaths:
     - lib/R/lib/
@@ -51,8 +51,7 @@ about:
     interpolative  decomposition (rid), and the randomized CUR decomposition (rcur).
     In addition several plot  functions are provided.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
