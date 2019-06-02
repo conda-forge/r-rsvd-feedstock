@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rsvd_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rsvd/rsvd_{{ version }}.tar.gz
-  sha256: 560ddf3cac57b0dfad37c7aceafb73e383d074616a8aad11dd35273aedce506e
+  sha256: ffb7d8a7360a8cf265e43c481abdcde3091460d592e270924b7209591c9c5ab9
 
 build:
   merge_build_host: True  # [win]
