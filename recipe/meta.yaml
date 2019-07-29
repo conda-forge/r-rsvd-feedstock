@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rsvd_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rsvd/rsvd_{{ version }}.tar.gz
-  sha256: ffb7d8a7360a8cf265e43c481abdcde3091460d592e270924b7209591c9c5ab9
+  sha256: c8fe5c18bf7bcfe32604a897e3a7caae39b49e47e93edad9e4d07657fc392a3a
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
