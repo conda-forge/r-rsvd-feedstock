@@ -24,10 +24,10 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
   host:
-    - r-base
+    - r-base >=4.0.0
     - r-matrix
   run:
-    - r-base
+    - r-base >=4.0.0
     - r-matrix
 
 test:
