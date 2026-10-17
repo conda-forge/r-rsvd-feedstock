@@ -1,4 +1,4 @@
-{% set version = "1.0.5" %}
+{% set version = "1.0.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rsvd_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rsvd/rsvd_{{ version }}.tar.gz
-  sha256: e40686b869acd4f71fdb1e8e7a6c64cd6792fc9d52a78f9e559a7176ab84e21e
+  sha256: df9a27edc2d133c15925b95566c9ffec8ff4e77dd446097f03e2f7e080907e8d
 
 build:
-  number: 4
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
